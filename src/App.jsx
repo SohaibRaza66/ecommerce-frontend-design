@@ -4,6 +4,7 @@ import Header from './Layouts/Header'
 import Footer from './Layouts/Footer'
 import Home from './Pages/Home'
 import Navbar from './Layouts/Navbar'
+import Copyright from './Components/Copyright'
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
     </Routes>
         <Footer />
+        <Copyright />
     </BrowserRouter>
     </>
   )
