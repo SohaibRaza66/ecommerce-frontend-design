@@ -2,3 +2,51 @@
 body{
     background-color: lightgrey;
 }
+.bg {
+    position: relative;
+    overflow: hidden;
+}
+.bg::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 224, 176, 0.5);
+    z-index: 1;
+    inset: 0;
+}
+.bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('image 92.jpg') no-repeat center left;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: 0;
+}
+.bg > * {
+    position: relative;
+    z-index: 1;
+}
+.bg1 {
+    position: relative;
+    overflow: hidden;
+}
+.bg1::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(176, 246, 255, 0.5);
+    z-index: 1;
+    inset: 0;
+}
+.bg1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('image 98.jpg') no-repeat center center;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: 0;
+}
+.bg1 > * {
+    position: relative;
+    z-index: 1;
+}

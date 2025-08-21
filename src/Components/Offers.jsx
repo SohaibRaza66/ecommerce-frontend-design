@@ -3,8 +3,8 @@ import React,{useState,useEffect} from 'react'
 const Offers = () => {
   return (
     <>
-    <div className="container bg-white rounded-md mt-4 flex m-auto p-4">
-      <div className="time">
+    <div className="container bg-white rounded-md mt-4 flex m-auto">
+      <div className="time p-4">
         <h2 className="text-2xl font-semi-bold">Deals and Offer</h2>
         <p className='text-gray-400'>Hygiene Equipments</p>
         <div className="timer flex mt-2">
