@@ -1,6 +1,6 @@
 @import "tailwindcss";
 body{
-    background-color: lightgrey;
+    background-color: rgb(240, 240, 240);
 }
 .bg {
     position: relative;
@@ -47,6 +47,29 @@ body{
     z-index: 0;
 }
 .bg1 > * {
+    position: relative;
+    z-index: 1;
+}
+.bg2 {
+    position: relative;
+    overflow: hidden;
+}
+.bg2::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, rgba(25, 0, 255, 0.5), rgba(131, 117, 255, 0.5));
+    z-index: 1;
+    inset: 0;
+}
+.bg2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('image 102.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+}
+.bg2 > * {
     position: relative;
     z-index: 1;
 }

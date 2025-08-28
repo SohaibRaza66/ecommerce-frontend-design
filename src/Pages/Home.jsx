@@ -7,6 +7,7 @@ import Services from "../Components/Services";
 import Home_Outdoor from "../Components/Home_Outdoor";
 import Quote from "../Components/Quote";
 import Subscribe from "../Components/Subscribe";
+import Suppliers from "../Components/Suppliers";
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
       <Quote />
       <Recommended />
       <Services />
+      <Suppliers />
       <Subscribe />
     </>
   );
