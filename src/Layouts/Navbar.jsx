@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <FaBars className="text-2xl mr-2 rounded-md p-1" />
             <ul className="flex items-center">
-              <li className="mx-4">All Categories</li>
+              <Link to={"/products"}><li className="mx-4">All Categories</li></Link>
               <li className="mx-4">Hot Offers</li>
               <li className="mx-4">Gift Boxes</li>
               <li className="mx-4">Projects</li>

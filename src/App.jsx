@@ -5,6 +5,7 @@ import Footer from './Layouts/Footer'
 import Home from './Pages/Home'
 import Navbar from './Layouts/Navbar'
 import Copyright from './Components/Copyright'
+import Products from './Pages/Products'
 const App = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const App = () => {
         <Navbar />
     <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
     </Routes>
         <Footer />
         <Copyright />
