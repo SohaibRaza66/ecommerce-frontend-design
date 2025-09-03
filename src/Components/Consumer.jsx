@@ -66,7 +66,7 @@ const Consumer = () => {
                 <h4 className="font-bold">{item.title}</h4>
                 <p>{item.description}</p>
                 </div>
-                <img src={item.image} alt={item.title} className="w-auto h-32 object-fit ms-auto" />
+                <img src={item.image} alt={item.title} className="md:w-auto h-32 object-fit ms-auto w-1/2" />
               </div>
             ))}
           </div>
