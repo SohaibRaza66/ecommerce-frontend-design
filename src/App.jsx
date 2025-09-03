@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import Navbar from './Layouts/Navbar'
 import Copyright from './Components/Copyright'
 import Products from './Pages/Products'
+import Cart from './Pages/cart'
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
     </Routes>
         <Footer />
         <Copyright />

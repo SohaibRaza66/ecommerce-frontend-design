@@ -1,6 +1,7 @@
 import React from "react";
 import { BiHeart, BiShoppingBag, BiCart } from "react-icons/bi";
 import { MdPerson } from "react-icons/md";
+import { Link } from "react-router";
 import { PiChatTextFill } from "react-icons/pi";
 const Header = () => {
   return (
@@ -51,8 +52,10 @@ const Header = () => {
               <p>Orders</p>
             </div>
             <div className="cart ms-5 grid place-items-center">
-              <BiCart className="text-2xl text-gray-700" />
-              <p>My Cart</p>
+              <Link to="/cart">
+                <BiCart className="text-2xl text-gray-700" />
+                <p>My Cart</p>
+              </Link>
             </div>
           </div>
         </div>
